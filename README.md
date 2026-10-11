@@ -8,6 +8,16 @@
   <img src="https://img.shields.io/badge/PROCESSING-Local-397FC4?style=flat-square&amp;labelColor=292637" alt="내 PC에서 이미지 처리">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/LANGUAGE-C%23-8962DA?style=flat-square&amp;labelColor=292637" alt="사용 언어: C#">
+  <img src="https://img.shields.io/badge/.NET-8-7455B4?style=flat-square&amp;logo=dotnet&amp;logoColor=white&amp;labelColor=292637" alt=".NET 8">
+  <img src="https://img.shields.io/badge/UI-WinForms-397FC4?style=flat-square&amp;labelColor=292637" alt="UI: Windows Forms">
+  <img src="https://img.shields.io/badge/RENDERING-SkiaSharp-8962DA?style=flat-square&amp;labelColor=292637" alt="렌더링: SkiaSharp">
+  <img src="https://img.shields.io/badge/CODEC-Magick.NET-397FC4?style=flat-square&amp;labelColor=292637" alt="이미지 코덱: Magick.NET">
+  <img src="https://img.shields.io/badge/AI-Real--ESRGAN%20NCNN%20Vulkan-7455B4?style=flat-square&amp;labelColor=292637" alt="AI 엔진: Real-ESRGAN NCNN Vulkan">
+  <img src="https://img.shields.io/badge/LICENSE-All%20Rights%20Reserved-D65A9E?style=flat-square&amp;labelColor=292637" alt="앱 저작권: All Rights Reserved">
+</p>
+
 <p align="center"><strong>작은 이미지, 더 선명하게.</strong><br>사진·일러스트·투명 이미지·픽셀아트를 내 PC에서 최대 8배로 확대합니다.</p>
 
 Windows 10/11 64비트용 프레임리스 이미지 업스케일러입니다. 단일 EXE에 모델·코덱·런타임을 포함합니다.
@@ -19,10 +29,10 @@ PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리�
 
 <p align="center">
   <a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest/download/ImageUpscaler.exe"><img src="https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-D65A9E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="ImageUpscaler.exe 다운로드"></a>
-  <a href="https://github.com/deuxdoom/ImageUpscaler/releases"><img src="https://img.shields.io/badge/%EB%A6%B4%EB%A6%AC%EC%8A%A4%EC%99%80%20SHA--256-8962DA?style=for-the-badge" alt="릴리스와 SHA-256 확인"></a>
-  <a href="https://github.com/deuxdoom/ImageUpscaler/blob/main/docs/index.html"><img src="https://img.shields.io/badge/%EC%86%8C%EA%B0%9C%20%ED%8E%98%EC%9D%B4%EC%A7%80-397FC4?style=for-the-badge" alt="소개 페이지"></a>
   <a href="https://github.com/deuxdoom/ImageUpscaler/blob/main/CHANGELOG.md"><img src="https://img.shields.io/badge/%EB%B3%80%EA%B2%BD%20%EA%B8%B0%EB%A1%9D-7455B4?style=for-the-badge" alt="변경 기록"></a>
 </p>
+
+소개 페이지: [**deuxdoom.github.io/ImageUpscaler/**](https://deuxdoom.github.io/ImageUpscaler/)
 
 <p align="center">
   <a href="#시작하기"><img src="https://img.shields.io/badge/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-343044?style=flat-square" alt="시작하기 바로가기"></a>
