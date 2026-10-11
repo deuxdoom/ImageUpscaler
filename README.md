@@ -29,10 +29,9 @@ PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리�
 
 <p align="center">
   <a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest/download/ImageUpscaler.exe"><img src="https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-D65A9E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="ImageUpscaler.exe 다운로드"></a>
+  <a href="https://deuxdoom.github.io/ImageUpscaler/"><img src="https://img.shields.io/badge/%EC%86%8C%EA%B0%9C%20%ED%8E%98%EC%9D%B4%EC%A7%80-397FC4?style=for-the-badge" alt="소개 페이지: deuxdoom.github.io/ImageUpscaler/"></a>
   <a href="https://github.com/deuxdoom/ImageUpscaler/blob/main/CHANGELOG.md"><img src="https://img.shields.io/badge/%EB%B3%80%EA%B2%BD%20%EA%B8%B0%EB%A1%9D-7455B4?style=for-the-badge" alt="변경 기록"></a>
 </p>
-
-소개 페이지: [**deuxdoom.github.io/ImageUpscaler/**](https://deuxdoom.github.io/ImageUpscaler/)
 
 <p align="center">
   <a href="#시작하기"><img src="https://img.shields.io/badge/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-343044?style=flat-square" alt="시작하기 바로가기"></a>
