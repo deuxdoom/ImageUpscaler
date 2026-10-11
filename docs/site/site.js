@@ -95,8 +95,6 @@
     "faq.privacyA": "No. Images are processed on your PC. The app connects to GitHub only to check for and download updates, and never uploads image files.",
     "faq.faithfulQ": "Does Faithful mode keep every bit of information?",
     "faq.faithfulA": "It enlarges without estimating new detail with AI. Output is 8-bit sRGB; HDR, 16-bit precision and animation are not supported. Working images, including AI's internal 4× frame and 8× results, are limited to 48 megapixels.",
-    "faq.driveQ": "Is it limited to the F: drive?",
-    "faq.driveA": "No. It runs from any drive; pick a location where a working folder can be created next to the EXE. The F: drive rule applies only to development.",
     "footer.changelog": "Changelog", "footer.font": "Font license"
   };
   const descriptions = {

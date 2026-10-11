@@ -1,15 +1,41 @@
 <h1 align="center"><img src="docs/site/media/app-icon.png" width="42" alt=""> ImageUpscaler</h1>
 
-<p align="center"><strong>작은 이미지, 더 선명하게.</strong><br>사진·일러스트·투명 이미지·픽셀아트를 내 PC에서 최대 8배로 확대합니다.</p>
+<p align="center">
+  <a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ImageUpscaler?style=flat-square&amp;label=RELEASE&amp;logo=github&amp;logoColor=white&amp;labelColor=292637&amp;color=8962DA" alt="최신 릴리스 버전"></a>
+  <a href="https://github.com/deuxdoom/ImageUpscaler/releases" title="모든 릴리스의 ImageUpscaler.exe 다운로드 합계"><img src="https://img.shields.io/github/downloads/deuxdoom/ImageUpscaler/ImageUpscaler.exe?displayAssetName=false&amp;style=flat-square&amp;label=DOWNLOADS&amp;logo=github&amp;logoColor=white&amp;labelColor=292637&amp;color=D65A9E" alt="모든 릴리스의 EXE 총 다운로드 수"></a>
+  <img src="https://img.shields.io/badge/WINDOWS-10%20%2F%2011%20x64-397FC4?style=flat-square&amp;labelColor=292637" alt="Windows 10/11 64비트">
+  <img src="https://img.shields.io/badge/PORTABLE-Single%20EXE-8962DA?style=flat-square&amp;labelColor=292637" alt="단일 EXE 포터블">
+  <img src="https://img.shields.io/badge/PROCESSING-Local-397FC4?style=flat-square&amp;labelColor=292637" alt="내 PC에서 이미지 처리">
+</p>
 
-<p align="center"><a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest/download/ImageUpscaler.exe">다운로드</a> · <a href="https://github.com/deuxdoom/ImageUpscaler/releases">릴리스와 SHA-256</a> · <a href="docs/index.html">소개 페이지</a> · <a href="CHANGELOG.md">변경 기록</a></p>
+<p align="center"><strong>작은 이미지, 더 선명하게.</strong><br>사진·일러스트·투명 이미지·픽셀아트를 내 PC에서 최대 8배로 확대합니다.</p>
 
 Windows 10/11 64비트용 프레임리스 이미지 업스케일러입니다. 단일 EXE에 모델·코덱·런타임을 포함합니다.
 PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리와 전후 비교를 지원합니다.
-최신 버전은 `1.0.0`(2026-10-11)입니다. 위 다운로드 링크로 최신 GitHub 릴리스의 `ImageUpscaler.exe`를 바로 받을 수 있습니다.
+최신 버전은 `1.0.0`(2026-10-11)입니다. 아래 다운로드 버튼으로 최신 GitHub 릴리스의 `ImageUpscaler.exe`를 바로 받을 수 있습니다.
 이 저장소는 배포 안내용이며 앱 소스는 공개하지 않습니다. 실행 파일은 [GitHub 릴리스](https://github.com/deuxdoom/ImageUpscaler/releases)로 배포합니다.
 
 ![ImageUpscaler](docs/site/media/app-comparison.png)
+
+<p align="center">
+  <a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest/download/ImageUpscaler.exe"><img src="https://img.shields.io/badge/%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-D65A9E?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="ImageUpscaler.exe 다운로드"></a>
+  <a href="https://github.com/deuxdoom/ImageUpscaler/releases"><img src="https://img.shields.io/badge/%EB%A6%B4%EB%A6%AC%EC%8A%A4%EC%99%80%20SHA--256-8962DA?style=for-the-badge" alt="릴리스와 SHA-256 확인"></a>
+  <a href="https://github.com/deuxdoom/ImageUpscaler/blob/main/docs/index.html"><img src="https://img.shields.io/badge/%EC%86%8C%EA%B0%9C%20%ED%8E%98%EC%9D%B4%EC%A7%80-397FC4?style=for-the-badge" alt="소개 페이지"></a>
+  <a href="https://github.com/deuxdoom/ImageUpscaler/blob/main/CHANGELOG.md"><img src="https://img.shields.io/badge/%EB%B3%80%EA%B2%BD%20%EA%B8%B0%EB%A1%9D-7455B4?style=for-the-badge" alt="변경 기록"></a>
+</p>
+
+<p align="center">
+  <a href="#시작하기"><img src="https://img.shields.io/badge/%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-343044?style=flat-square" alt="시작하기 바로가기"></a>
+  <a href="#이미지에-맞는-처리-방식"><img src="https://img.shields.io/badge/%EC%B2%98%EB%A6%AC%20%EB%B0%A9%EC%8B%9D-343044?style=flat-square" alt="처리 방식 바로가기"></a>
+  <a href="#시스템-요구-사항"><img src="https://img.shields.io/badge/%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EC%9A%94%EA%B5%AC%20%EC%82%AC%ED%95%AD-343044?style=flat-square" alt="시스템 요구 사항 바로가기"></a>
+  <a href="#주의-사항-ai-모드와-그래픽카드"><img src="https://img.shields.io/badge/AI%C2%B7%EA%B7%B8%EB%9E%98%ED%94%BD%EC%B9%B4%EB%93%9C-343044?style=flat-square" alt="AI·그래픽카드 바로가기"></a>
+  <a href="#포터블-경로"><img src="https://img.shields.io/badge/%ED%8F%AC%ED%84%B0%EB%B8%94%20%EA%B2%BD%EB%A1%9C-343044?style=flat-square" alt="포터블 경로 바로가기"></a>
+  <br>
+  <a href="#업데이트"><img src="https://img.shields.io/badge/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-343044?style=flat-square" alt="업데이트 바로가기"></a>
+  <a href="#받은-파일-확인"><img src="https://img.shields.io/badge/SHA--256%20%ED%99%95%EC%9D%B8-343044?style=flat-square" alt="SHA-256 확인 바로가기"></a>
+  <a href="#이미지-처리-범위"><img src="https://img.shields.io/badge/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%B2%98%EB%A6%AC%20%EB%B2%94%EC%9C%84-343044?style=flat-square" alt="이미지 처리 범위 바로가기"></a>
+  <a href="#문서"><img src="https://img.shields.io/badge/%EB%AC%B8%EC%84%9C-343044?style=flat-square" alt="문서 바로가기"></a>
+</p>
 
 ## 시작하기
 
@@ -115,15 +141,6 @@ HDR/16bit 정밀도 보존과 애니메이션/다중 페이지는 지원하지 �
 alpha는 AI로 생성하지 않고 별도로 확대합니다. 48M 출력/내부 처리 픽셀 제한, 스테이징 검증,
 큰 RGB 손상 감지, 취소 시 자식 프로세스/임시 파일 정리를 적용했습니다.
 AI는 디테일을 추정하며, 손상 검사가 모든 지각적 품질 문제를 판별한다는 보장은 아닙니다.
-
-## 소개 페이지
-
-`docs/index.html`은 이미지·폰트·CSS·JavaScript를 내장한 HTML입니다. 파일 하나를 로컬에서 열어도 표시됩니다.
-첫 화면의 `Windows용 다운로드` 버튼은 최신 릴리스의 `ImageUpscaler.exe`를 바로 받고, 상단 바로가기는 섹션 순서대로 이동합니다.
-상단의 `KO | EN` 버튼으로 한국어와 영어를 바꿀 수 있습니다. 처음에는 브라우저 언어를 따르며, 고른 언어를 기억합니다.
-사진 비교 시뮬레이터는 Unsplash 사진의 작은 입력과 **앱에서 실제로 4배 처리한 결과**를 사용합니다.
-앱 화면을 재구성한 체험 안에서 선을 직접 끌거나 터치·키보드로 움직여 전후 사진을 비교할 수 있습니다.
-전후 사진에 CSS blur를 적용하지 않습니다.
 
 ## 문서
 
