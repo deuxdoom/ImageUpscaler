@@ -4,6 +4,7 @@
   <a href="https://github.com/deuxdoom/ImageUpscaler/releases/latest"><img src="https://img.shields.io/github/v/release/deuxdoom/ImageUpscaler?style=flat-square&amp;label=RELEASE&amp;logo=github&amp;logoColor=white&amp;labelColor=292637&amp;color=8962DA" alt="최신 릴리스 버전"></a>
   <a href="https://github.com/deuxdoom/ImageUpscaler/releases" title="모든 릴리스의 ImageUpscaler.exe 다운로드 합계"><img src="https://img.shields.io/github/downloads/deuxdoom/ImageUpscaler/ImageUpscaler.exe?displayAssetName=false&amp;style=flat-square&amp;label=DOWNLOADS&amp;logo=github&amp;logoColor=white&amp;labelColor=292637&amp;color=D65A9E" alt="모든 릴리스의 EXE 총 다운로드 수"></a>
   <img src="https://img.shields.io/badge/WINDOWS-10%20%2F%2011%20x64-397FC4?style=flat-square&amp;labelColor=292637" alt="Windows 10/11 64비트">
+  <img src="https://img.shields.io/badge/LICENSE-All%20Rights%20Reserved-D65A9E?style=flat-square&amp;labelColor=292637" alt="앱 저작권: All Rights Reserved">
   <img src="https://img.shields.io/badge/PORTABLE-Single%20EXE-8962DA?style=flat-square&amp;labelColor=292637" alt="단일 EXE 포터블">
   <img src="https://img.shields.io/badge/PROCESSING-Local-397FC4?style=flat-square&amp;labelColor=292637" alt="내 PC에서 이미지 처리">
 </p>
@@ -15,15 +16,9 @@
   <img src="https://img.shields.io/badge/RENDERING-SkiaSharp-8962DA?style=flat-square&amp;labelColor=292637" alt="렌더링: SkiaSharp">
   <img src="https://img.shields.io/badge/CODEC-Magick.NET-397FC4?style=flat-square&amp;labelColor=292637" alt="이미지 코덱: Magick.NET">
   <img src="https://img.shields.io/badge/AI-Real--ESRGAN%20NCNN%20Vulkan-7455B4?style=flat-square&amp;labelColor=292637" alt="AI 엔진: Real-ESRGAN NCNN Vulkan">
-  <img src="https://img.shields.io/badge/LICENSE-All%20Rights%20Reserved-D65A9E?style=flat-square&amp;labelColor=292637" alt="앱 저작권: All Rights Reserved">
 </p>
 
 <p align="center"><strong>작은 이미지, 더 선명하게.</strong><br>사진·일러스트·투명 이미지·픽셀아트를 내 PC에서 최대 8배로 확대합니다.</p>
-
-Windows 10/11 64비트용 프레임리스 이미지 업스케일러입니다. 단일 EXE에 모델·코덱·런타임을 포함합니다.
-PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리와 전후 비교를 지원합니다.
-최신 버전은 `1.0.0`(2026-10-11)입니다. 아래 다운로드 버튼으로 최신 GitHub 릴리스의 `ImageUpscaler.exe`를 바로 받을 수 있습니다.
-이 저장소는 배포 안내용이며 앱 소스는 공개하지 않습니다. 실행 파일은 [GitHub 릴리스](https://github.com/deuxdoom/ImageUpscaler/releases)로 배포합니다.
 
 ![ImageUpscaler](docs/site/media/app-comparison.png)
 
@@ -46,26 +41,32 @@ PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리�
   <a href="#문서"><img src="https://img.shields.io/badge/%EB%AC%B8%EC%84%9C-343044?style=flat-square" alt="문서 바로가기"></a>
 </p>
 
-## 시작하기
+<a id="introduction"></a>
 
-1. 원하는 폴더에 `ImageUpscaler.exe`를 두고 실행합니다.
-2. 이미지를 끌어놓고 배율·처리 방식·저장 형식을 고릅니다.
-3. 업스케일을 시작하고 비교선을 움직여 결과를 확인합니다.
+## 📌 소개
 
-EXE는 어느 드라이브에 두어도 실행됩니다. 이미지를 추가하거나 끌어 놓고 배율·처리 방식·저장 형식을 선택합니다.
-기본 결과 폴더는 EXE 옆 `output`, 다른 폴더도 선택 가능합니다. 원본과 기존 결과를 덮어쓰지 않습니다.
-목록 카드의 `X`를 누르면 그 이미지만 목록에서 뺍니다. `Ctrl`+클릭·`Shift`+클릭·`Ctrl+A`로 여러 장을 선택한 뒤
-상단 휴지통이나 `Delete`를 누르면 선택한 이미지만 뺍니다. 디스크의 원본·결과 파일은 지우지 않습니다.
-슬라이더로 전후 비교, 휠로 확대합니다. `Ctrl+O` 추가, `Tab` 버튼 이동, `←/→` 비교선,
-`Esc` 취소, `F11` 최대화를 지원합니다. 버튼은 마우스로 누르는 동안만 강조되며, `Tab`으로 이동하면 키보드 포커스를 표시합니다.
-최소화(`_`)하면 트레이로 내려가며 알림을 표시하고, 트레이 아이콘을 더블 클릭하면 복원합니다.
-처음 실행하면 화면 가운데에서 열리고, 이후에는 마지막으로 닫은 위치·크기·최대화 상태로 열립니다.
-연결이 끊긴 모니터에 있던 위치라면 다시 가운데에서 엽니다.
-창의 `X`를 누르면 종료할지 먼저 확인합니다. 트레이 메뉴의 종료는 바로 끝냅니다.
-같은 폴더의 프로그램은 한 번만 실행됩니다. 다시 실행하면 새 창 대신 열려 있는 창(트레이에 있어도)을 앞으로 가져옵니다.
-상단 버전 배지를 누르면 GitHub 저장소를 엽니다. 트레이의 GitHub 옥토콘 메뉴에서도 바로 이동할 수 있습니다.
+Windows 10/11 64비트용 프레임리스 이미지 업스케일러입니다. 단일 EXE에 모델·코덱·런타임을 포함합니다.
+PNG · JPG · WebP · AVIF, 2× · 4× · 8×, 투명도 보존, 일괄 처리와 전후 비교를 지원합니다.
+최신 버전은 `1.0.0`(2026-10-11)입니다. 아래 다운로드 버튼으로 최신 GitHub 릴리스의 `ImageUpscaler.exe`를 바로 받을 수 있습니다.
+이 저장소는 배포 안내용이며 앱 소스는 공개하지 않습니다. 실행 파일은 [GitHub 릴리스](https://github.com/deuxdoom/ImageUpscaler/releases)로 배포합니다.
 
-## 이미지에 맞는 처리 방식
+<a id="requirements"></a>
+
+<a id="시스템-요구-사항"></a>
+
+## 💻 시스템 요구 사항
+
+- Windows 10/11 x64, EXE 옆에 `bin` 폴더를 생성할 수 있는 저장 위치.
+- 사진 AI·이미지 AI: Vulkan을 지원하는 그래픽카드와 최신 그래픽 드라이버. 원본 보존·픽셀아트는 그래픽카드 없이 사용합니다.
+- 이미지 처리는 로컬에서 이루어지며, 인터넷은 업데이트 확인·다운로드에 사용합니다.
+- 언어: Windows 표시 언어가 한국어면 한국어로, 그 밖의 언어면 영어로 표시합니다.
+  환경 변수 `IMAGEUPSCALER_LANG`을 `ko` 또는 `en`으로 지정하면 언어를 고정할 수 있습니다.
+
+<a id="features"></a>
+
+<a id="이미지에-맞는-처리-방식"></a>
+
+## ✨ 주요 기능
 
 | 모드 | 처리 | 출력 이름 예 |
 |---|---|---|
@@ -79,15 +80,41 @@ AI 모드는 그래픽카드(Vulkan)를 사용합니다. 원본 보존과 픽셀
 AI는 실제 4× 추론 후 2×는 축소하고, 8×는 2× 결과에 4× 처리를 한 번 더 적용합니다. 실패를 보간 결과로 대체하지 않습니다.
 8×는 결과가 4,800만 픽셀 이하여야 하므로 약 75만 픽셀(예: 1000 × 750) 이하의 이미지에 사용할 수 있습니다.
 
-## 시스템 요구 사항
+<a id="usage"></a>
 
-- Windows 10/11 x64, EXE 옆에 `bin` 폴더를 생성할 수 있는 저장 위치.
-- 사진 AI·이미지 AI: Vulkan을 지원하는 그래픽카드와 최신 그래픽 드라이버. 원본 보존·픽셀아트는 그래픽카드 없이 사용합니다.
-- 이미지 처리는 로컬에서 이루어지며, 인터넷은 업데이트 확인·다운로드에 사용합니다.
-- 언어: Windows 표시 언어가 한국어면 한국어로, 그 밖의 언어면 영어로 표시합니다.
-  환경 변수 `IMAGEUPSCALER_LANG`을 `ko` 또는 `en`으로 지정하면 언어를 고정할 수 있습니다.
+<a id="시작하기"></a>
 
-## 주의 사항: AI 모드와 그래픽카드
+## 🚀 다운로드 및 실행
+
+1. 원하는 폴더에 `ImageUpscaler.exe`를 두고 실행합니다.
+2. 이미지를 끌어놓고 배율·처리 방식·저장 형식을 고릅니다.
+3. 업스케일을 시작하고 비교선을 움직여 결과를 확인합니다.
+
+EXE는 어느 드라이브에 두어도 실행됩니다. 이미지를 추가하거나 끌어 놓고 배율·처리 방식·저장 형식을 선택합니다.
+기본 결과 폴더는 EXE 옆 `output`, 다른 폴더도 선택 가능합니다. 원본과 기존 결과를 덮어쓰지 않습니다.
+목록 카드의 `X`를 누르면 그 이미지만 목록에서 뺍니다. `Ctrl`+클릭·`Shift`+클릭·`Ctrl+A`로 여러 장을 선택한 뒤
+상단 휴지통이나 `Delete`를 누르면 선택한 이미지만 뺍니다. 디스크의 원본·결과 파일은 지우지 않습니다.
+**1.0.1 배포 예정:** 라이브러리 아래의 **전체 / 선택 / 미완료**로 처리 대상을 정합니다. 미완료는 대기·실패·취소 항목만 처리하므로 완료된 결과를 유지하며 이어서 작업할 수 있습니다.
+처리 대상에 투명 JPG나 크기 제한에 걸리는 이미지가 있으면 시작 전에 안내합니다. 해당 카드를 선택해 원인을 확인하고 저장 형식·배율·처리 방식을 바꾸세요.
+처리 개수와 경과 시간이 표시되며, 한 장 이상 완료되면 실제 처리 시간을 바탕으로 예상 남은 시간을 표시합니다. 이미지마다 소요 시간이 달라 추정치는 바뀔 수 있습니다.
+**결과 파일 찾기**는 선택한 이미지의 실제 저장 파일을 탐색기에서 보여 줍니다. **비교 초기화**는 비교선·확대·이동을 함께 되돌립니다.
+
+슬라이더로 전후 비교, 휠로 확대합니다. `Ctrl+O` 추가, `Tab` 버튼 이동, `←/→` 비교선,
+`Esc` 취소, `F11` 최대화를 지원합니다. 버튼은 마우스로 누르는 동안만 강조되며, `Tab`으로 이동하면 키보드 포커스를 표시합니다.
+최소화(`_`)하면 트레이로 내려가며 알림을 표시하고, 트레이 아이콘을 더블 클릭하면 복원합니다.
+처음 실행하면 화면 가운데에서 열리고, 이후에는 마지막으로 닫은 위치·크기·최대화 상태로 열립니다.
+연결이 끊긴 모니터에 있던 위치라면 다시 가운데에서 엽니다.
+창의 `X`를 누르면 종료할지 먼저 확인합니다. 트레이 메뉴의 종료는 바로 끝냅니다.
+같은 폴더의 프로그램은 한 번만 실행됩니다. 다시 실행하면 새 창 대신 열려 있는 창(트레이에 있어도)을 앞으로 가져옵니다.
+상단 버전 배지를 누르면 GitHub 저장소를 엽니다. 트레이의 GitHub 옥토콘 메뉴에서도 바로 이동할 수 있습니다.
+
+<a id="cautions"></a>
+
+<a id="주의-사항-ai-모드와-그래픽카드"></a>
+
+## ⚠️ 주의 사항
+
+### AI 모드와 그래픽카드
 
 > [!IMPORTANT]
 > **사진 AI·이미지 AI는 그래픽카드로 계산합니다.** 그래픽카드나 드라이버가 준비되지 않은 PC에서는 AI 모드가 동작하지 않습니다.
@@ -109,7 +136,11 @@ AI 모드가 켜져 있는데도 "AI 처리에 실패했습니다. Vulkan GPU/�
 그래픽 드라이버를 업데이트한 뒤 다시 시도하세요. 그래도 안 되면 **원본 보존**이나 **픽셀아트** 모드를 사용하세요.
 이 두 모드는 그래픽카드 없이 동작합니다. AI가 실패해도 다른 방식의 결과로 몰래 바꿔 저장하지 않습니다.
 
-## 포터블 경로
+<a id="folders"></a>
+
+<a id="포터블-경로"></a>
+
+## 📁 폴더 구성
 
 ```text
 ImageUpscaler.exe
@@ -126,7 +157,11 @@ output/               # 기본 결과 폴더
 별도 설치/런타임 다운로드는 필요하지 않습니다. 실행기는 Windows 기본 .NET Framework 4.8을 사용합니다.
 EXE가 있는 폴더에 `bin`을 만들 수 있어야 합니다. 설정은 종료할 때 저장하고 손상된 JSON은 기본값으로 복구합니다.
 
-## 업데이트
+<a id="updates"></a>
+
+<a id="업데이트"></a>
+
+## 🔄 업데이트
 
 [deuxdoom/ImageUpscaler](https://github.com/deuxdoom/ImageUpscaler)의 정식 릴리스를 시작 시 확인하고 유휴 상태에서 자동 설치합니다.
 상단 버튼/트레이 메뉴로 직접 확인할 수도 있습니다. GitHub asset `sha256` digest를 우선 확인하고,
@@ -135,7 +170,11 @@ EXE가 있는 폴더에 `bin`을 만들 수 있어야 합니다. 설정은 종�
 `bin/settings.json`의 `CheckUpdates`/`AutoInstallUpdates`를 `false`로 지정하면 해당 자동 동작을 끕니다.
 초안과 사전 릴리스는 업데이트 대상에서 제외하며, 정식 릴리스의 `ImageUpscaler.exe`만 내려받습니다.
 
-## 받은 파일 확인
+<a id="verification"></a>
+
+<a id="받은-파일-확인"></a>
+
+## 🔐 다운로드 파일 검증
 
 릴리스 노트에 적힌 SHA-256과 내려받은 EXE의 값을 비교하면 같은 파일인지 확인할 수 있습니다.
 
@@ -143,7 +182,11 @@ EXE가 있는 폴더에 `bin`을 만들 수 있어야 합니다. 설정은 종�
 Get-FileHash .\ImageUpscaler.exe -Algorithm SHA256
 ```
 
-## 이미지 처리 범위
+<a id="processing-scope"></a>
+
+<a id="이미지-처리-범위"></a>
+
+## 🖼 이미지 처리 범위
 
 EXIF 방향 및 ICC→sRGB, PNG/WebP 무손실, AVIF 고품질 4:4:4, **8bit sRGB 출력**입니다.
 HDR/16bit 정밀도 보존과 애니메이션/다중 페이지는 지원하지 않습니다. 투명 입력의 JPG 저장은 거부합니다.
@@ -151,6 +194,34 @@ alpha는 AI로 생성하지 않고 별도로 확대합니다. 48M 출력/내부 
 큰 RGB 손상 감지, 취소 시 자식 프로세스/임시 파일 정리를 적용했습니다.
 AI는 디테일을 추정하며, 손상 검사가 모든 지각적 품질 문제를 판별한다는 보장은 아닙니다.
 
-## 문서
+<a id="documentation"></a>
+
+<a id="문서"></a>
+
+## 📚 문서
 
 [알고리즘 안내](docs/algorithms.md) · [포터블/업데이트](docs/portable-updates.md) · [라이선스](docs/licenses.md) · [라이선스 전문](licenses)
+
+<a id="support"></a>
+
+## 🤝 문의 및 지원
+
+- **버그 제보 및 기능 제안:** [GitHub Issues](https://github.com/deuxdoom/ImageUpscaler/issues)
+- **버전별 변경 내용:** [변경 기록](CHANGELOG.md) · [전체 릴리스](https://github.com/deuxdoom/ImageUpscaler/releases)
+
+<a id="license"></a>
+
+## 📜 라이선스 및 저작권
+
+**Copyright © 2026 deuxdoom. All rights reserved.**
+
+| 항목 | 내용 |
+| --- | --- |
+| 배포 형태 | 프리웨어 (무료 배포) |
+| 소스 코드 | 비공개 |
+
+앱 자체의 저작권은 개발자에게 있으며, 오픈소스 라이선스를 제공하지 않습니다.
+
+### 제3자 구성 요소
+
+외부 라이브러리·모델·글꼴·아이콘에는 각각의 라이선스가 적용됩니다. 출처는 [라이선스 안내](docs/licenses.md), 전문은 [licenses](licenses)에 정리되어 있습니다.
